@@ -1,0 +1,83 @@
+@import "../../assets/scss/standards.scss";
+
+@mixin imageStyle($prop1, $prop2) {
+  display: grid;
+  grid-template-columns: $prop1 $prop2;
+}
+
+.Presentation {
+  padding: 2% 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 50px 0px;
+
+  .presentation-text {
+    font-family: "Raleway-Bold";
+    text-transform: uppercase;
+    font-size: 60px;
+    display: grid;
+    align-items: center;
+    line-height: 73px;
+  }
+
+  .worker-people {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .image-row-1 {
+      @include imageStyle(auto, 40%);
+      div {
+        // border: 1px solid black;
+        display: grid;
+
+        &:nth-child(1) {
+          img {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 100px;
+          }
+        }
+
+        &:nth-child(2) {
+          img {
+            object-fit: cover;
+            object-position: center;
+            width: 65%;
+            height: 100%;
+            border-radius: 150px;
+            justify-self: end;
+          }
+        }
+      }
+    }
+
+    .image-row-2 {
+      @include imageStyle(40%, auto);
+      div {
+        // border: 1px solid black;
+        display: grid;
+
+        &:nth-child(2) {
+          img {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 100px;
+            justify-self: end;
+          }
+        }
+
+        &:nth-child(1) {
+          img {
+            object-fit: cover;
+            object-position: center;
+            width: 65%;
+            height: 100%;
+            border-radius: 150px;
+          }
+        }
+      }
+    }
+  }
+}

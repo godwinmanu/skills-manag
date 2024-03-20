@@ -1,0 +1,77 @@
+@import "../../assets/scss/standards.scss";
+
+.Offers {
+  .members-locations-skills {
+    color: white;
+    background-color: #1a1a1a;
+    padding: 7% 15%;
+    font-size: 14px;
+
+    .search-input-group {
+      position: relative;
+      margin-bottom: 50px;
+
+      .search-icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        opacity: 0.6;
+      }
+
+      input {
+        width: 100%;
+        padding: 7px 30px;
+        border: 1px solid rgba($color: #fff, $alpha: 0.4);
+        outline: none;
+        background-color: transparent;
+        border-radius: 20px;
+      }
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: 25% auto;
+
+      .locations-skills {
+        .locations,
+        .skills {
+          .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            // border: 1px solid white;
+            margin-bottom: 25px;
+            padding: 5px;
+            padding-right: 50px;
+
+            .tag {
+              border: 1px solid rgba($color: #fff, $alpha: 0.4);
+              background-color: transparent;
+              border-radius: 20px;
+              padding: 3px 10px;
+              background-color: rgba($color: #fff, $alpha: 0.1);
+            }
+          }
+        }
+      }
+
+      .members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 15px;
+
+        .view-more{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-top: 15px;
+
+          button{
+            @include buttonStyle (10px, 20px, 20px);
+          }
+        }
+      }
+    }
+  }
+}

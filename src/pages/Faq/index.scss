@@ -1,0 +1,63 @@
+@import "../../assets/scss/standards.scss";
+
+.Faq {
+  .landing {
+    padding: 4% 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 50px 0px;
+
+    .landing-text {
+      display: grid;
+      gap: 20px;
+
+      p {
+        font-family: "Raleway-Bold";
+        font-size: 50px;
+        color: $colorCode;
+      }
+
+      div {
+        font-size: 30px;
+      }
+
+      .view-jobs {
+        button {
+          @include buttonStyle(15px, 20px, 50px);
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          font-family: "Raleway-Medium";
+        }
+      }
+    }
+  }
+
+  .questions-answers {
+    padding: 0% 17%;
+
+    h1 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 20px;
+      font-family: "Raleway-Bold";
+    }
+
+    p {
+      padding: 0% 5%;
+      text-align: center;
+      color: #757575;
+      font-size: 20px;
+      font-family: "Raleway-Medium";
+      margin-bottom: 70px;
+    }
+
+    .CustomAccordion {
+      padding: 5%;
+      padding-top: 0px;
+    }
+  }
+}

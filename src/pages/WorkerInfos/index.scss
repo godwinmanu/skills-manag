@@ -1,0 +1,73 @@
+@import "../../assets/scss/standards.scss";
+
+.Workerinfos {
+  padding: 5% 15%;
+  display: grid;
+  gap: 50px;
+
+  p {
+    color: $colorCode;
+    font-weight: bold;
+    font-family: "Raleway-Medium";
+    font-size: 18px;
+  }
+
+  .pic-name {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+
+    img {
+      height: 120px;
+      width: 120px;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Raleway-Bold";
+      font-size: 25px;
+    }
+  }
+
+  .worker-infos {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+
+    .basics {
+      display: grid;
+      align-content: baseline;
+      gap: 20px;
+
+      div {
+        display: grid;
+        gap: 10px;
+      }
+    }
+
+    .experiences,
+    .skills {
+      display: grid;
+      gap: 10px;
+    }
+  }
+
+  .bio-and-resume{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+    
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 3px 10px;
+        background-color: $colorCode;
+        border-radius: 30px;
+        color: white;
+        font-family: "Raleway-Bold";
+    }
+  }
+}

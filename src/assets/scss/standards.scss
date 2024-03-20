@@ -1,0 +1,39 @@
+$colorCode: #653f56;
+$cardBackground: #f6f6f6;
+
+@mixin buttonStyle($pY, $pX, $radius) {
+  padding: $pY $pX;
+  border: none;
+  outline: none;
+  background-color: $colorCode;
+  color: white;
+  font-weight: bold;
+  border-radius: $radius;
+  cursor: pointer;
+}
+
+@mixin inputStyle() {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../../assets/fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../../assets/fonts/Raleway/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../../assets/fonts/Raleway/Raleway-Bold.ttf");
+}

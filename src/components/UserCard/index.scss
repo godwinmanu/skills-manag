@@ -1,0 +1,36 @@
+@import "../../assets/scss/standards.scss";
+
+.UserCard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: $colorCode;
+    width: 225px;
+    height: 280px;
+    font-size: 13.5px;
+
+    img{
+        height: 60%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+
+    div{
+        display: grid;
+        gap: 5px;
+        padding-top: 20px;
+
+        p{
+            text-align: center;
+
+            &:nth-child(1){
+                font-family: "Raleway-Bold";
+            }
+        }
+    }
+}

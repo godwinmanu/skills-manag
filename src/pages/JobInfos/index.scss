@@ -1,0 +1,131 @@
+@import "../../assets/scss/standards.scss";
+
+.JobInfos {
+  padding: 5% 15%;
+  display: flex;
+  justify-content: space-between;
+  // gap: 30px;
+
+  .box-1 {
+    display: grid;
+    gap: 100px;
+    height: 100%;
+
+    .picture {
+      width: 500px;
+      height: 400px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .offer-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      h4 {
+        font-weight: bold;
+        font-size: 17px;
+        color: $colorCode;
+      }
+
+      .sub-box {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+        }
+      }
+
+      .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+    }
+  }
+
+  .box-2 {
+    display: grid;
+    gap: 20px;
+
+    .firm-cotations {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba($color: $colorCode, $alpha: 0.3);
+
+      .icon {
+        width: 80px;
+        height: 80px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .name-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        height: 100%;
+
+        .follow {
+          display: flex;
+          gap: 20px;
+
+          button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            @include buttonStyle(4px, 10px, 20px);
+            font-size: smaller;
+          }
+        }
+      }
+    }
+
+    .extra-buttons{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba($color: $colorCode, $alpha: 0.3);
+
+      button{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        @include buttonStyle(4px, 30px, 20px);
+      }
+    }
+
+    #apply ,#read-more{
+      margin: 20px 0px;
+      justify-self: center;
+      @include buttonStyle(5px, 30px, 20px);
+    }
+    
+    #recent-posts{
+      justify-self: center;
+      @include buttonStyle(5px, 30px, 10px);
+      margin-bottom: 20px;
+    }
+    .images-box{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 1px solid rgb(221, 218, 218);
+    }
+  }
+}

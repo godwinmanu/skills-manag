@@ -1,0 +1,40 @@
+@import "../../assets/scss/standards.scss";
+
+.Profile{
+    padding: 5% 17%;
+
+    .user-pic{
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 100px;
+            width: 100px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .infos-container{
+
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            label{
+                padding-left: 7px;
+            }
+
+            input:not(#multiple-limit-tags), textarea{
+                @include inputStyle();
+            }
+
+            textarea{
+                resize: none;
+            }
+        }
+        /* display: grid;
+        grid-template-columns: auto 40%; */
+
+    }
+}

@@ -1,0 +1,61 @@
+@import "../../assets/scss/standards.scss";
+
+.PostOffer {
+  padding: 5% 15%;
+  display: grid;
+  gap: 30px;
+
+  .extras {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    .box {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #a38c9a;
+      border-radius: 50px;
+      color: white;
+      font-family: "Raleway-Bold";
+      font-size: 25px;
+    }
+
+    .requests {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+
+      button {
+        @include buttonStyle(7px, 20px, 20px);
+        background-color: #f2f2f2;
+        color: black;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .offer-infos {
+    display: grid;
+    gap: 25px;
+
+    h2 {
+      font-family: "Raleway-Bold";
+      font-size: 25px;
+      color: #424585;
+    }
+
+    input{
+        @include inputStyle()
+    }
+
+    button{
+        @include buttonStyle(7px, 20px, 20px);
+    }
+  }
+}

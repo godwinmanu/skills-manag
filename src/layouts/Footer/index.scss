@@ -1,0 +1,43 @@
+@import "../../assets/scss/standards.scss";
+
+$background: $colorCode;
+
+.Footer {
+  background-color: $background;
+  color: white;
+  padding: 5% 15%;
+
+  
+  
+  .logo{
+    font-family: "Raleway-Bold";
+    font-size: 20px;
+
+    span:nth-child(2){
+      opacity: 0.5;
+    }
+  }
+  
+  .separator {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .policy-copyrights{
+    font-family: "Raleway-Medium";
+  }
+}
+
+// ================== Responsive =======================

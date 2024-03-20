@@ -1,0 +1,38 @@
+@import "../../assets/scss/standards.scss";
+
+.ResetPassword {
+  display: grid;
+  background-color: #f9fafc;
+  font-size: 17px;
+  justify-content: center;
+  padding: 10% 0px;
+
+  form {
+    display: grid;
+    gap: 20px;
+
+    p:nth-child(1) {
+      font-size: 35px;
+      font-family: "Gordita-Bold";
+    }
+
+    button {
+      @include buttonStyle(10px, 10px, 10px);
+      font-size: 20px;
+    }
+
+  }
+}
+
+@media screen and (max-width : 649px) {
+  .ResetPassword {
+    padding: 50px;
+    font-size: 16px;
+
+    form{
+      p:nth-child(1) {
+        font-size: 25px;
+      }
+    }
+  }
+}

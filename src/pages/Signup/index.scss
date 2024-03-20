@@ -1,0 +1,83 @@
+@import "../../assets/scss/standards.scss";
+
+.Signup {
+  padding: 5% 20%;
+  display: grid;
+  font-size: 17px;
+
+  form {
+    padding: 0px 20px;
+
+    h2 {
+      text-align: center;
+      font-family: "Raleway-Bold";
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .fields {
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      input:not(#multiple-limit-tags),
+      textarea,
+      select,
+      #resume_label {
+        @include inputStyle();
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .experiences {
+        div {
+          &:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            span:nth-child(1){
+              font-family: "Raleway-Medium";
+              font-weight: bold
+            }
+
+            .add-experience {
+              @include buttonStyle(10px, 20px, 20px);
+            }
+
+            .experiences-container{
+              width: 100%;
+              display: grid;
+
+            }
+          }
+        }
+      }
+
+      #resume_label {
+        cursor: pointer;
+      }
+    }
+
+    #submit {
+      @include buttonStyle(10px, 20px, 20px);
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .Signup {
+    padding: 50px;
+    font-size: 16px;
+
+    form {
+      p:nth-child(1) {
+        font-size: 25px;
+      }
+    }
+  }
+}

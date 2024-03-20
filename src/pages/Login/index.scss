@@ -1,0 +1,55 @@
+@import "../../assets/scss/standards.scss";
+
+.Login {
+  display: grid;
+
+  form {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 50px 35px;
+    justify-self: center;
+    display: grid;
+    gap: 15px;
+    color: white;
+    width: 30%;
+
+    p {
+      font-family: "Raleway-Medium";
+      font-size: 17px;
+
+      span {
+        font-family: "Raleway-Bold";
+      }
+    }
+
+    input {
+      padding: 10px 25px;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 50px;
+      background-color: white;
+      color: #1a1a1a;
+    }
+
+    button {
+      @include buttonStyle(10px, 25px, 50px);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .Login {
+    padding: 50px;
+    font-size: 16px;
+
+    form {
+      p:nth-child(1) {
+        font-size: 25px;
+      }
+    }
+  }
+}

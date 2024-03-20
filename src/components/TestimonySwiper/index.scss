@@ -1,0 +1,32 @@
+@import "../../assets/scss/standards.scss";
+
+.TestimonySwiper {
+  .swiper {
+    
+    .swiper-item {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 50px;
+
+      .stars {
+        display: flex;
+        gap: 5px;
+      }
+
+      .comment-message{
+        text-align: center;
+        font-family: "Raleway-Medium";
+        font-size: 15px;
+      }
+
+      .comment-user{
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}

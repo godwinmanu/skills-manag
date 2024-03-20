@@ -1,0 +1,40 @@
+@import "../../assets/scss/standards.scss";
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 15%;
+
+  .brand-logo {
+    color: $colorCode;
+    font-family: "Raleway-Bold";
+    font-size: 20px;
+    
+    span:nth-child(2) {
+      opacity: 0.5;
+    }
+  }
+
+  .link-items {
+    display: flex;
+    align-content: center;
+    gap: 15px;
+
+    a {
+      font-family: "Raleway-Medium";
+      display: grid;
+      align-content: center;
+      color: black;
+
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 15px;
+
+      a {
+        @include buttonStyle(10px, 20px, 30px);
+      }
+    }
+  }
+}
